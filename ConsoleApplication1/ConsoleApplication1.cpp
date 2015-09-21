@@ -12,7 +12,7 @@ int main()
 	intArray* tmp = new intArray();
 	delete tmp;
 	firstArra->setNum(10);
-	firstArra->setArra(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+	firstArra->setArra(1, 2, 3, 4, 5, 6, 7, 8, 9, 10); 
 	firstArra->printArra();
 
 	secondArra->setNum(8);
