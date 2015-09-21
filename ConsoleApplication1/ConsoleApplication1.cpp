@@ -5,6 +5,26 @@
 #include <iostream>
 #include "intArr.h"
 
+int MaxSum(int x,...)
+{
+	int kol = 0;
+	int max = 0;
+	int arra[10];
+	int* sum = &x;
+	for (int i = 0;*sum; i++)
+	{
+		arra[i] = *sum; 
+		*sum++;
+		kol++;
+		
+	}
+	for (int i = 0; i < kol; i++)
+	{
+		if (max < arra[i]) max = arra[i];
+	}
+	std::cout << "Max sum is : " << max << std::endl;
+	return max;
+}
 int main()
 {
 	intArray* firstArra = new intArray();
